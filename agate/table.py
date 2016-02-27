@@ -1,4 +1,7 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+#!/usr/bin/env python
 
 """
 This module contains the :class:`Table` object, which is the central data
@@ -667,7 +670,7 @@ class Table(utils.Patchable):
     @allow_tableset_proxy
     def where(self, test):
         """
-        Filter a to only those rows where the row passes a truth test.
+        Create a new table with the rows from this table that passes a truth test.
 
         :param test:
             A function that takes a :class:`.Row` and returns :code:`True` if
